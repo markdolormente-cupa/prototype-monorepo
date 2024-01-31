@@ -14,9 +14,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const className = `${inter.className} flex min-h-screen flex-col items-center justify-between p-24`
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={className} >{children}</body>
     </html>
   );
 }
